@@ -1,0 +1,743 @@
+*,body,:root{
+    background-color: #f5f4f0;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    width: 100%;
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav{
+    flex: 1 0 75%;
+    justify-content: flex-end;
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.headerLogo img{
+    width: 50%;
+}
+
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+ol li{
+    margin: 0px 25px;
+    font-size: 20px;
+    color: #ba2649;
+    font-weight: 500;
+    list-style: none;
+}
+
+ol li a
+{
+    text-decoration: none;
+    color: #ba2649;
+}
+
+ol li a:hover
+{
+    color: #E8827F;
+}
+
+.classHamburger {
+    display:none;
+}
+
+.expandir {
+    display: flex;
+    flex-direction: column; 
+    gap: 2.25rem;
+ /*   background-color: var(--neutral-400);*/
+    box-shadow: 0 100vh 0 100vh var(--neutral-670);
+    inset: 5em 0 auto 0;
+    padding-block: 2em;
+    position: fixed;
+    transform: translateY(-20%);
+/*    transition: box-shadow var(--ease-out-sine) var(--ms200);*/
+}
+
+#logoHamburger{
+    width: 3em;
+}
+
+#hamburger{
+    border: 0px; 
+}
+
+/*aside*/
+
+.asideContatos,.contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.asideContatos{
+    width: 2em;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.links{
+    display: block;
+    text-decoration: none;
+    color:#ba2649;
+}
+
+.asideEmail{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    position: fixed;
+    right: -2.5em;
+    z-index: 30;
+    background-color: transparent;
+}
+
+#email{
+    color: #ba2649;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    transform: rotate(90deg);
+    letter-spacing: 0.1em;
+    
+}
+
+.decoration{
+    background-color: #E8827F;
+    height: 4rem;
+    width: 1px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*main*/
+
+/*home*/
+
+.home{
+    display: flex;
+    margin: 0 auto;
+    padding: 9rem 12rem;
+    max-width: 130em;
+    min-height: 60vh;
+}
+
+.textoHome{
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 70%;
+}
+
+@keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+#hello{
+    animation: type 15s steps(67) forwards, blink .9s step-end 4 forwards;
+    animation-delay:0.5s,4s;
+    border-right: 2px solid #ba2649;
+    color:#8f9099;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: fit-content;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    letter-spacing: .25px;
+    line-height: 1;
+}
+
+h1 span{
+    color:#ba2649;
+}
+
+.homeIntro p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-block-start: 1.25em;
+}
+
+#homeBotao{
+    margin:3em 0;
+}
+
+#homeBotao a{
+    background-color: #ba2649;
+    border-radius: 2em;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: fit-content;
+    padding: 0.75em 2em;
+    text-decoration: none;
+}
+
+.imgHome{
+    width: 50%;  
+    margin: 0px 80px; 
+}
+
+.img{
+    text-align:center;
+}
+
+#imgPerfil{
+    width: 17rem;
+    border-radius: 10em;
+    transition: transform 0.3s;
+}
+
+.imgHome .img img:hover {
+    transform: scale(1.4); 
+}
+
+
+
+/*sobre*/
+
+.sobreMim{
+    margin: 0 auto;
+    padding: 1rem 12rem;
+    max-width: 130em;
+    min-height: 80vh;
+}
+
+.sobreMim h2,.experiencia h2, .habilidades h2, .projetos h2, .divContato h2{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 2rem;
+    color:#ba2649;
+    font-weight: 800;
+}
+
+.sobreMim h2::before{
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #E8827F;
+    font-size: 1.8rem;
+}
+
+.sobreMim h2::after,.experiencia h2::after, .habilidades h2::after, .projetos h2::after, .divContato h2::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: #E8827F;
+    margin-left: 20px;
+}
+
+.sobre{
+    width: 90%;
+}
+
+.textos p, .hobbies p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.textos p span{
+    color:#ba2649;
+    font-weight: 700;
+}
+
+.hobbies ul{
+    list-style: none;
+}
+
+.hobbies ul li {
+    font-size: 1.2rem;
+    color: #ba2649;
+    font-weight: 500;
+}
+
+.hobbies ul li::before{
+    content: "▹";
+    color: #ba2649;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 18px;
+}
+
+/*experiencia*/
+
+.experiencia{
+    margin: 0 auto;
+    padding: 2rem 12rem;
+    max-width: 130em;
+    min-height: 70vh;
+}
+
+.experiencia h2::before{
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #E8827F;
+    font-size: 1.8rem;
+}
+
+.tipo h3{
+    font-size: 1.8rem;
+    color:#ba2649;
+    font-weight: 700;
+}
+
+.listExperiencia{
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.listExperiencia ul{
+    list-style: none;
+    width:50%
+}
+
+.listExperiencia ul li button{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px 2px;
+    border:none;
+    border-left: 2px solid #ba2649;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.listExperiencia ul li button::before{
+    content: "▹";
+    color: #ba2649;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 18px;
+}
+
+.listExperiencia ul li button:focus,.listExperiencia ul li button:hover{
+    background-color: #E8827F;
+    color:#fff;
+}
+
+.lugares{
+    width: 100%;
+    display: flex;
+    margin-right: 2rem;
+    padding: 0 1rem;
+}
+
+.lugares h4{
+    padding: 0 1rem;
+    color: #ba2649;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.lugares h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #E8827F;
+    padding: 0.8rem 1rem;
+}
+
+.lugares p{
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+}
+
+.negrito{
+    font-weight: 600;
+    color:#E8827F;
+}
+
+/*habilidades*/
+
+.habilidades{
+    margin: 0 auto;
+    padding: 2rem 12rem;
+    max-width: 130em;
+    min-height: 80vh;
+}
+
+.habilidades h2::before{
+    counter-increment: section 4;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #E8827F;
+    font-size: 1.8rem;
+}
+
+.listHabilidades{
+    display: flex;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.colHabilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2.5rem;
+}
+
+.colHabilidades img{
+    height: 5rem;
+    width: 5rem;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.colHabilidades img:hover{
+    transform: scale(1.3);
+}
+
+.colHabilidades a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.colHabilidades a:hover{
+    color: #ba2649;
+    font-weight: 600;
+}
+
+.imgHab{
+    width: 9rem !important;
+    background-color: transparent;
+}
+
+/*projetos*/
+
+.projetos h2::before{
+    counter-increment: section 3;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #E8827F;
+    font-size: 1.8rem;
+}
+
+.projetos{
+    margin: 0 auto;
+    padding: 2rem 12rem;
+    max-width: 130em;
+    min-height: 70vh;
+}
+
+.projetoBox{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 2rem;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: row;
+    margin: 2.5rem 0;
+}
+
+.projetoTexto{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+}
+
+.esq{
+    flex-direction: row-reverse;
+}
+
+.projetoTexto h3{
+    color: #ba2649;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block-end: 1rem;
+}
+
+.projetoTexto p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    max-width: 52ch;
+    text-align: justify;
+}
+
+.projetoTexto ul{
+    display: flex;
+    gap: 1rem;
+    margin-block: 1rem;
+    padding: 0;
+}
+
+.projetoTexto ul li{
+    background-color: #E8827F;
+    border-radius: 0.25em;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2em 0.5em;
+    list-style: none;
+}
+
+.linkProjeto{
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem 0;
+}
+
+.linkProjeto a{
+    color: #ba2649;
+}
+
+.imgProjeto{
+    flex-basis: 60%;
+    padding: 0 2rem;
+}
+
+.imgProjeto a img{
+    border-radius:20px;
+    margin-inline: auto;
+    max-width: 80%;   
+    transition: transform 0.3s;
+    opacity: .5;
+   
+}
+
+.imgProjeto a img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/*Contato*/
+.divContato h2::before{
+    counter-increment: section 5;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: 400;
+    color: #E8827F;
+    font-size: 1.8rem;
+}
+
+.divContato{
+    margin: 0 auto;
+    padding: 2rem 12rem;
+    max-width: 130em;
+    min-height: 40vh;
+}
+
+.linksContatos ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.375rem;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.linksContatos ul li a {
+    color: #ba2649;
+    display: block;
+}
+
+.textoContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoContato h4{
+    font-size: 1.8rem;
+    color:#E8827F;
+    font-weight: 600;
+}
+
+.textoContato p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 2.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+#copy span{
+    font-weight: 700;
+    color:#ba2649;
+}
+
+footer p{
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    
+    .headerLogo img{
+        width: 250px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .classHamburger {
+        display: flex;
+    }
+
+    .nav{
+        justify-content: flex-end;
+    }
+
+    #hello{
+        animation: none;
+        border: none;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    .textoHome {
+        align-items: center;
+        text-align: center;
+        margin: 1em;
+    }
+
+    #homeBotao{
+        display: flex;
+        justify-content: center;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        max-width: 180em;
+        min-height: auto;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    #imgPerfil{
+        width: 13rem;
+    }
+
+    .asideEmail,.asideContatos{
+        display: none;
+    }
+
+    .textos{
+        width: 100%;
+    }
+
+    .sobreMim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        padding: 1rem 1rem;
+    }
+
+    .sobreMim p{
+        text-align: center;
+    }
+
+    .sobre{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .colHabilidades{
+        padding: 2rem 1rem;
+    }
+
+    .experiencia, .habilidades, .projetos{
+        align-items: center;
+        padding: 1rem 1.5rem;
+        min-height: auto;
+    }
+
+    .projeto{
+        flex-direction: column-reverse;
+        max-width: 180em;
+        min-height: auto;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    .projetoTexto{
+       text-align: center;
+       align-items: center;
+    }
+
+    .imgProjeto{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .divContato{
+        padding: 1rem 1.5rem;
+    }
+
+}
+
+
+

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/png" href="/img//Logo_sgv.svg" />
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="./src/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Bianca Melaré</title>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <nav>
+          <div class="headerLogo">
+             <a> <img class="logo" src="./img/Logo_sgv.svg" alt="imagem-logo"> </a>
+          </div>
+          <div class="nav">
+              <div class="menu">
+                  <ol class="list-items">
+                      <li><a href="#sobreMim">Sobre mim</a></li>
+                      <li><a href="#experiencia">Experiências</a></li>
+                      <li><a href="#projetos">Projetos</a></li>
+                      <li><a href="#habilidades">Habilidades</a></li>
+                      <li><a href="#divContato">Contato</a></li>
+                  </ol>
+              </div>
+              <div class="classHamburger">
+                  <button class="hamburger" id="hamburger">
+                      <img id="logoHamburger" src="./img/hamburger.png">
+                  </button>
+              </div>
+          </div>
+        </nav>
+     </header>
+   <main>
+    <div class="home">
+        <div class="textoHome">
+            <p id="hello">Hello,Word!</p>
+            <h1>Eu sou a <span>Bianca Vitorino de Souza Melaré</span></h1>
+            <div class="homeIntro">
+                <p>Brasileira. Estudante. Irmã mais velha. Amiga. Amante de livros. Determinada. Menina sonhadora.
+                Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Sorocaba (4/6 semestres).
+                Em cada nova atividade que me proponho realizar, desde uma tarefa simples até um projeto complexo do trabalho, procuro dar o meu melhor e colaborar ao máximo com todos os envolvidos, visando sempre adquirir novas experiências e conhecimentos.</p>
+                <div id="homeBotao">
+                    <a href="#sobreMim">Conheça mais sobre mim</a>
+                </div>
+            </div>
+        </div>
+        <div class="imgHome">
+            <div class="img">
+                <img src="./img/Perfil.jpeg" alt="Bianca Melaré" id="imgPerfil">
+            </div>
+        </div>
+    </div>
+    <div class="sobreMim" id="sobreMim">
+        <h2>Sobre Mim</h2>
+        <div class="sobre">
+            <div class="textos">
+                <p>
+                    Nasci ás 7h da manhã do dia 22 de março de 2004 na cidade de <span>Sorocaba</span>. Apressada, cheguei nesse mundo com 7 meses e meio e fui recebida com muito carinho nos braços de meus pais, <span>Angelina Vitorino de Souza Melaré</span> e <span>Bruno Melaré Neto</span>. Sou a primeira neta da família e meus pais, avôs e tios me proporcionaram a melhor infância que poderia ter. Brinquei, aprontei, chorei e me diverti muito. Entrei na escolinha com 1 ano e 10 meses e lá fiz amigos, os quais tenho relacionamento de amizade até hoje. Com 3 anos ganhei minha irmã, <span>Julia Vitorino de Souza Melaré</span>. 
+                    Em 2010, mudei de colégio e na <span>COC Santa Rosália</span> estudei até 2021, quando me formei no Ensino Médio. Atualmente, tenho 19 anos e estou cursando o quarto semestre de <span>Análise e Desenvolvimento de Sistemas na Fatec Sorocaba</span>. 
+                </p>
+                <p>
+                    Vivo com meus pais, minha irmã , minha cachorrinha <span>Mili</span> e minha porquinha da índia <span>Amora</span>. Minha família é incrível e sempre buscam o melhor para mim... Meus pais sempre fizeram de tudo para eu me desenvolver bem como cidadã e ser feliz. 
+                </p>
+                <p>
+                    Nessa minha pequena trajetória já aprendi muita coisa, mas sempre busco vivenciar novas histórias e obter conhecimentos. Em cada nova atividade que me proponho a realizar, seja ela uma simples tarefa até um  complexo projeto da faculdade, busco dar o meu melhor e colaborar ao máximo com todos os envolvidos.
+                </p>
+                <p>
+                    Uma frase que me marca muito é <span>“A vida não é sobre metas, conquistas e linhas de chegada. É sobre quem você se torna durante a caminhada”</span> ... Nessa minha caminhada vi muitas borboletas no caminho, porém ás vezes encontrava algumas pedras, um pequeno obstáculo, que com esforço o enfrentamos, seguindo o nosso trajeto. 
+                </p>
+                <p>
+                    Esta sou eu: <span>Bianca Vitorino de Souza Melaré!</span>
+                </p>
+            </div>
+            <div class="hobbies">
+                <p>Algumas atividades que amo fazer:</p>
+                <ul>
+                    <li>Ler</li>
+                    <li>Ouvir música</li>
+                    <li>Assistir filmes e séries</li>
+                    <li>Escrever</li>
+                    <li>Montar quebra-cabeças</li>
+                    <li>Passear com minha família e amigos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="experiencia" id="experiencia">
+        <h2>Experiências</h2>
+        <div class="tipo">
+            <h3>Experiência acadêmica</h3>
+            <div class="listExperiencia">
+                <ul>
+                    <li><button onclick="ativarViking()">Escola Viking</button></li>
+                    <li><button onclick="ativarCoc()">COC Santa Rosália</button></li>
+                    <li><button onclick="ativarFatec()">Fatec Sorocaba</button></li>
+                    <li><button onclick="ativarFacens()">Facens</button></li>
+                    <li><button onclick="ativarIngles()">Inglês</button></li>
+                    <span></span>
+                </ul>
+                <div class="lugares" id="viking">
+                    <h4>Escola Viking - Início</h4>
+                    <h5>2005 - 2009</h5>
+                    <p>Entrei na escola Viking em 2005 e lá fiquei até 2009, quando terminei a pré-escola.</p>
+                </div>
+                <div class="lugares" id="coc">
+                    <h4>COC Santa Rosália</h4>
+                    <h5>2010 - 2021</h5>
+                    <p>Entrei na escola COC Santa Rosália em 2010 e lá realizei todo meu Ensino Fundamental. Na COC tive professores incríveis e fiz amizades que mantenho até hoje. Em 2014, participei do grupo de teatro da escola e realizamos a peça Alice nos País das Maravilhas. Além disso, sempre tive um bom desempenho nas matérias escolares e ganhei uma bolsa de mérito em 2015 para realizar meu Ensino Fundamental II.</p>
+                    <p>Em 2019, ganhei uma bolsa de mérito para realizar meu Ensino Médio na COC.  Lá cursei meus últimos 3 anos de escola, nos quais desenvolvi importantes habilidades profissionais e sociais, como a de trabalho em equipe e responsabilidade. </p>
+                </div>
+                <div class="lugares" id="fatec">
+                    <h4>Fatec Sorocaba</h4>
+                    <h5>2022 - atualmente</h5>
+                    <p>Em 2022, fui aprovada no vestibular da Fatec e comecei meus estudos em Análise e Desenvolvimento de Sistemas no período da manhã lá. Atualmente, estou no 4° semestre do curso.</p>
+                </div>
+                <div class="lugares" id="facens">
+                    <h4>Facens</h4>
+                    <h5>2022 - 2023</h5>
+                    <p>Em 2022, fui contemplada com uma bolsa de mérito na Facens e iniciei meu estudos em Engenharia de Computação no turno da noite.</p>
+                </div>
+                <div class="lugares" id="ingles">
+                    <h4>Inglês</h4>
+                    <h5>Nível de inglês: intermediário/Avançado</h5>
+                    <p>Iniciei meu primeiro curso de inglês em 2014, na minha antiga escola COC Santa Rosália, a qual utilizava o material da Person. Em 2016, entrei no curso de inglês no Kumon e fiquei lá até atingir o nível G ( O curso de inglês do Kumon era nivelado pelo alfabeto). 
+                        Depois disso, em 2019, comecei fazer aulas particulares de inglês para praticar conversação e "listening" e estou até hoje.</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="tipo">
+            <h3>Experiência profissional</h3>
+            <div class="listExperiencia">
+                <ul>
+                    <li><button onclick="ativarItix()">Itix</button></li>
+                    <li><button onclick="ativarmm()">Media Monks Brasil</button></li>
+                    <span></span>
+                </ul>
+                <div class="lugares" id="itix">
+                    <h4>Itix - Desenolvimento de Software</h4>
+                    <h5>Maio/2023 - Julho/2023</h5>
+                    <p>Em maio de 2023, comecei meu primeiro estágio como desenvolvedora de software na Itix Tecnologia.Lá, trabalhei, no front-end, com framework <span class="negrito">Angular</span>, no back-end com <span class="negrito">Java, Spring Boot</span>, no banco de dados <span class="negrito">PoostgreeSQL</span> e utilizada também o <span class="negrito">Docker</span> e o <span class="negrito">AzureDevOps</span>. Além disso, vivia o dia a dia em contato com a metodologia <span class="negrito">Scrum</span>, com as várias dailys, reviews, retrospectivas e sprints. </p>
+                </div>
+                <div class="lugares" id="mm">
+                    <h4>Media Monks Brasil - Data Analytics</h4>
+                    <h5>Agosto/2023 - Atualmente</h5>
+                    <p>Em agosto de 2023, iniciei um estágio em Data Analytics na Media Monks Brasil, onde trabalho com operações de Data Analytics, utilizando as ferramentas
+                     <span class="negrito">Google Tag Manager, Google Analytics 4, Google BigQuery e Looker Studio e Salesforce</span>. Além disso, participo de reuniões diárias e treinamentos e faço a organização e gestão de tempo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="projetos" id="projetos">
+        <h2>Projetos e Conquistas</h2>
+        <div class="projetoBox">
+            <div class="projeto" >
+                <div class="projetoTexto">
+                    <h3>Clube do Livro</h3>
+                    <p>O projeto consiste em um site de Literatura que visa incentivar a procura do conhecimento e o hábito da leitura, sendo um site voltado para leitores, os quais terão a oportunidade de ler resenhas de livros, conhecer novos títulos, escritores e eventos literários, avaliar e comentar conteúdo e até se divertir com uma roleta literária.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <div class="linkProjeto">
+                        <a href="https://github.com/Biancamelare/ClubeDoLivro" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem"  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a> 
+                        <a href="https://biancamelare.github.io/ClubeDoLivro/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/clubeLivro.png"></a>
+                </div>
+            </div>
+            <div class="projeto esq">
+                <div class="projetoTexto">
+                    <h3>Big Bank</h3>
+                    <p>O projeto consiste em um programa desenvolvido em linguagem C que simula uma plataforma bancária online, na qual é possível consultar saldo, realizar transferências, fazer investimentos, pagar contas, fazer empréstimo e solicitar cartões de débito e crédito.</p>
+                    <ul>
+                        <li>C</li>
+                        <li>Lógica de Programação</li>
+                    </ul>
+                    <div class="linkProjeto">
+                        <a href="https://github.com/Biancamelare/BigBank" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem"  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/bigBank.png"></a>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="projetoTexto">
+                    <h3>Remember</h3>
+                    <p>O projeto consiste no desenvolvimento de um aplicativo de gerenciamento de tarefas, com o objetivo de ajudar na organização, planejamento e lembretes de afazeres do dia a dia.</p>
+                    <ul>
+                        <li>Engenharia de Software</li>
+                        <li>Desenvolvimento de Aplicativo</li>
+                    </ul>
+                    <div class="linkProjeto">
+                        <a href="https://github.com/Biancamelare/Projeto_EngSoftwareII" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem"  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/remember.png"></a>
+                </div>
+            </div>
+            <div class="projeto esq">
+                <div class="projetoTexto">
+                    <h3>Semana de Tecnologia</h3>
+                    <p>Em outubro de 2022 e de 2023, participei voluntariamente da comissão organizadora da Semana de Tecnologia na Fatec Sorocaba (SETEC), um evento anual promove que tem como objetivo estimular a extensão universitária e o aprimoramento profissional dos alunos por meio de minicursos e palestras, no qual os alunos têm contatos com profissionais e empresas dos mais variados setores da economia. </p>
+                    <ul>
+                        <li>Trabalho em Equipe</li>
+                        <li>Organização</li>
+                    </ul>
+                    <div class="linkProjeto">
+                        <a href="https://www.linkedin.com/company/semana-de-tecnologia/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                        </a> 
+                    </div>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/setec.JPG"></a>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="projetoTexto">
+                    <h3>Maratona de Programação</h3>
+                    <p>Em 2023, participei da Maratona de Programação InterFatecs, uma das maiores competições de programação de computadores do país, a qual me possibilitou desenvolver habilidades de liderança, trabalho em equipe, comunicação e espírito de competição.</p>
+                    <ul>
+                        <li>Trabalho em Equipe</li>
+                        <li>Maratona</li>
+                    </ul>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/maratona.jpeg"></a>
+                </div>
+            </div>
+            <div class="projeto esq">
+                <div class="projetoTexto">
+                    <h3>Ideathon</h3>
+                    <p>Em 2023, participei dao Ideathon, um evento que busca incentivar a esquematização de causas raízes e soluções tecnológicas para problemas que ocorrem no Brasil e no mundo.</p>
+                    <ul>
+                        <li>Inovação</li>
+                        <li>Soluções</li>
+                    </ul>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/ideathon.jpeg"></a>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="projetoTexto">
+                    <h3>Concurso de Redação</h3>
+                    <p>Minha antiga escola, a COC Santa Rosália, realiza todo ano um Concurso de Redação em que são selecionadas os 4 melhores textos de cada turma. Eu, como sempre gostei muito de escrever, me esforcei bastante e no sexto ano do Ensino Fundamental conquistei meu primeiro troféu. Hoje, tenho 5 prêmios, dois de 1º lugar( 9ºano e 1ºano do Ensino Médio), dois de 2º lugar(6ºano e 8ºano) e um de 4º lugar(7ºano). Durante a pandemia, em 2021, o concurso foi organizado pelos professores e premiados quatro textos (sem classificação de 1º ano 4º) e o meu foi um deles.</p>
+                    <ul>
+                        <li>Redação</li>
+                        <li>Escrita</li>
+                        <li>Leitura</li>
+                    </ul>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/redacao.jpeg"></a>
+                </div>
+            </div>
+            <div class="projeto esq">
+                <div class="projetoTexto">
+                    <h3>Intercâmbio para o Chile</h3>
+                    <p>Em agosto 2017, fiz um intercâmbio para o Chile, promovido pela minha antiga escola COC Santa Rosália. Fiquei 9 dias na casa de uma família chilena que me acolheu com muito carinho e dedicação, participei das aulas na escola William Kilpatrick , visitei pontos turísticos, conheci uma nova língua, novos costumes e vi pela primeira vez a neve. O mais legal foi o convívio com minha "irmã" chilena que em outubro veio visitar o Brasil, ficando hospedada em minha casa e fomos viajar para Bertioga (Da neve para a praia hahaha).</p>
+                    <ul>
+                        <li>Intercâmbio</li>
+                        <li>Cultura</li>
+                        <li>Espanhol</li>
+                    </ul>
+                </div>
+                <div class="imgProjeto">
+                    <a><img src="./img/chile.jpeg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="habilidades" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="listHabilidades">
+            <div class="colHabilidades">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML">
+                <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS">
+                <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                <a href="https://angular.io/" target="_blank">Angular</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <a href="https://www.figma.com/" target="_blank">Figma</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                <a href="https://www.w3schools.com/c/c_intro.php" target="_blank">C</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                <a href="https://www.w3schools.com/cs/index.php" target="_blank">C#</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <a href="https://www.w3schools.com/java/" target="_blank">Java</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" alt="SpringBoot">
+                <a href="https://spring.io/projects/spring-boot/" target="_blank">SpringBoot</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" alt="Docker">
+                <a href="https://www.docker.com/" target="_blank">Docker</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSql">
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://user-images.githubusercontent.com/87160095/199339101-f632e940-ba2a-482b-8ddb-0de21785d7b1.svg" alt="Oracle">
+                <a href="https://www.oracle.com/br/" target="_blank">Oracle</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" alt="AzureDevOps">
+                <a href="https://learn.microsoft.com/pt-br/azure/devops/user-guide/what-is-azure-devops?view=azure-devops" target="_blank">AzureDevOps</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control" target="_blank">Git</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                <a href="https://www.linux.org/" target="_blank">Linux</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                <a href="https://nodejs.org/en/docs" target="_blank">NodeJS</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jasmine/jasmine-plain.svg" alt="Jasmine">
+                <a href="https://jasmine.github.io/" target="_blank">Jasmine</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello">
+                <a href="https://trello.com/pt-BR" target="_blank">Trello</a>
+            </div>
+            <div class="colHabilidades">
+                <img class="imgHab" src="https://assets-global.website-files.com/6411daab15c8848a5e4e0153/6476ea094e355f0af99ca843_google-tag-manager.png" alt="GTM">
+                <a href="https://tagmanager.google.com/#/home" target="_blank">Google Tag Manager</a>
+            </div>
+            <div class="colHabilidades">
+                <img class="imgHab" src="https://rosalvobarreto.com.br/wp-content/uploads/2023/06/Google-Analytics-4-Rosalvo-Barreto.png" alt="GA4">
+                <a href="https://support.google.com/analytics/answer/10089681?hl=pt-BR" target="_blank">Google Analytics 4</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.worldvectorlogo.com/logos/google-bigquery-logo-1.svg" alt="BQ">
+                <a href="https://cloud.google.com/bigquery" target="_blank">BigQuery</a>
+            </div>
+            <div class="colHabilidades">
+                <img class="imgHab" src="https://4203549.fs1.hubspotusercontent-na1.net/hubfs/4203549/__hs-marketplace__/looker%20studio%20(2)(2)-1.png" alt="Looker">
+                <a href="https://lookerstudio.google.com/u/0/navigation/reporting" target="_blank">Looker Studio</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/2048px-New_Power_BI_Logo.svg.png" alt="PowerBI">
+                <a href="https://powerbi.microsoft.com/pt-br/" target="_blank">Power BI</a>
+            </div>
+            <div class="colHabilidades">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce">
+                <a href="https://www.salesforce.com/br/" target="_blank">Salesforce</a>
+            </div>
+        </div>
+    </div>
+    <div class="divContato" id="divContato">
+        <h2>Contato</h2>
+        <div class="textoContato">
+            <h4>Entre em contato!</h4>
+            <p>Minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer olá, entrarei em contato com você! Sinta-se à vontade para me enviar uma mensagem.</p>
+            <div class="linksContatos">
+                <ul>
+                    <li> <a href="https://github.com/Biancamelare" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                         </svg>
+                    </a> </li>
+                    <li> <a href="https://www.linkedin.com/in/bianca-melar%C3%A9-ba1a89241/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a></li>
+                    <li><a  href="https://www.instagram.com/invites/contact/?i=alp6sa3l26kc&utm_content=1875ubc" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a> </li>
+                    <li> <a  href="mailto:biancavsmelare@gmail.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3rem" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                        </svg>
+                    </a> </li>
+                </ul>
+        </div>
+        </div>
+    </div>
+    <aside class="asideContatos">
+        <div class="contatos">
+            <a class="links" href="https://github.com/Biancamelare" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                     </svg>
+            </a> 
+           <a class="links" href="https://www.linkedin.com/in/bianca-melar%C3%A9-ba1a89241/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                     </svg>
+            </a> 
+            <a class="links" href="https://www.instagram.com/invites/contact/?i=alp6sa3l26kc&utm_content=1875ubc" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+            </a> 
+            <a class="links" href="mailto:biancavsmelare@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                </svg>
+            </a> 
+        </div>
+        <div class="decoration"></div>
+    </aside>
+    <aside class="asideEmail">
+        <a href="mailto:biancavsmelare@gmail.com" id="email" title="biancavsmelare@gmail.com">biancavsmelare@gmail.com</a>
+        <div class="decoration"></div>
+    </aside>
+   </main>
+   <footer>
+        <p id="copy">Todos os diretos reservados <span>- Bianca Melaré &copy; 2023 </span></p>
+   </footer>
+
+</div>
+</body>
+</html>
