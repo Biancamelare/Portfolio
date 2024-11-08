@@ -38,9 +38,11 @@ const facens = document.querySelector('#facens');
 const ingles = document.querySelector('#ingles');
 const itix = document.querySelector('#itix');
 const mm = document.querySelector('#mm');
+const emb = document.querySelector('#emb');
 
 viking.addEventListener('onload',ativarViking());
 viking.addEventListener('onload',ativarItix());
+viking.addEventListener('onload',ativarEmb());
 
 
 function ativarViking(){
@@ -86,11 +88,19 @@ function ativarIngles(){
 function ativarItix(){
     itix.style.display = 'block';
     mm.style.display = 'none';
+    emb.style.display = 'none';
 }
 
 function ativarmm(){
     itix.style.display = 'none';
     mm.style.display = 'block';
+    emb.style.display = 'none';
+}
+
+function ativarEmb(){
+    emb.style.display = 'block';
+    mm.style.display = 'none';
+    itix.style.display = 'none';
 }
 
 
